@@ -1,4 +1,4 @@
 -r requirements.txt
 
 furo
-git+https://github.com/woopertail/FunPayAPI.git
+git+https://github.com/nerma-now/FunPayAPI.git
