@@ -16,7 +16,7 @@ setup(name='FunPayAPI',
       packages=find_packages("."),
       license='GPL3',
       keywords='funpay bot api tools',
-      install_requires=['requests==2.32.0', 'beautifulsoup4', 'requests_toolbelt==1.0.0'],
+      install_requires=['requests>=2.32.0', 'beautifulsoup4', 'requests_toolbelt==1.0.0'],
       classifiers=[
           'Development Status :: 5 - Production/Stable',
           'Programming Language :: Python :: 3',
