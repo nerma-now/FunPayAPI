@@ -1202,8 +1202,7 @@ class Account:
         }
         response = self.method("get", f"lots/offerEdit?offer={lot_id}", headers, {}, raise_not_200=True)
 
-        json_response = response.json()
-        bs = BeautifulSoup(json_response["html"], "html.parser")
+        bs = BeautifulSoup(response.text, "html.parser")
 
         result = {"active": "", "deactivate_after_sale": ""}
         result.update({field["name"]: field.get("value") or "" for field in bs.find_all("input")
